@@ -26,3 +26,7 @@ options:
                         Text prompt.
   -t TOP, --top TOP     Number of top scored images to display.
 ```
+
+## TODO
+
+- Add flag that toggle score statistics so that the default output is clean.
