@@ -19,10 +19,10 @@ def main():
     """Main"""
     parser = argparse.ArgumentParser(
         description="Search for images based on textual prompts using CLIP.")
-    parser.add_argument("--directory", type=str, required=True,
+    parser.add_argument("-d", "--directory", type=str, required=True,
                         help="Directory containing the images.")
-    parser.add_argument("--prompt", type=str, required=True, help="Text prompt.")
-    parser.add_argument("--top", type=int, default=15,
+    parser.add_argument("-p", "--prompt", type=str, required=True, help="Text prompt.")
+    parser.add_argument("-t", "--top", type=int, default=15,
                         help="Number of top scored images to display.")
     args = parser.parse_args()
 
