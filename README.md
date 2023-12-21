@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-```bash
+```
 usage: cliclip.py [-h] -d DIRECTORY -p PROMPT [-t TOP]
 
 Search for images based on textual prompts using CLIP.
