@@ -24,6 +24,7 @@ def main():
     parser.add_argument("-p", "--prompt", type=str, required=True, help="Text prompt.")
     parser.add_argument("-t", "--top", type=int, default=15,
                         help="Number of top scored images to display.")
+    parser.add_argument("-s", "--score", action='store_true', help="Display score alont output.")
     args = parser.parse_args()
 
     # Encode text prompt.
@@ -57,7 +58,10 @@ def main():
     # Display the top scored images along with their full paths.
     top_scored = min(args.top, len(sorted_images))
     for i, (image_path, score) in enumerate(sorted_images[:top_scored]):
-        print(f"Rank {i+1}: {image_path} (score: {score:.2f})")
+        if args.score:
+            print(f"Rank {i+1}: {image_path} (score: {score:.2f})")
+        else:
+            print(image_path)
 
 
 if __name__ == '__main__':
