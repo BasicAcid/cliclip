@@ -24,7 +24,7 @@ def main():
     parser.add_argument("-p", "--prompt", type=str, required=True, help="Text prompt.")
     parser.add_argument("-t", "--top", type=int, default=15,
                         help="Number of top scored images to display.")
-    parser.add_argument("-s", "--score", action='store_true', help="Display score alont output.")
+    parser.add_argument("-s", "--score", action='store_true', help="Display score along output.")
     args = parser.parse_args()
 
     # Encode text prompt.

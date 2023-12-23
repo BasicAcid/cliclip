@@ -14,7 +14,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-usage: cliclip.py [-h] -d DIRECTORY -p PROMPT [-t TOP]
+usage: cliclip.py [-h] -d DIRECTORY -p PROMPT [-t TOP] [-s]
 
 Search for images based on textual prompts using CLIP.
 
@@ -25,6 +25,7 @@ options:
   -p PROMPT, --prompt PROMPT
                         Text prompt.
   -t TOP, --top TOP     Number of top scored images to display.
+  -s, --score           Display score along output.
 ```
 
 ## TODO
