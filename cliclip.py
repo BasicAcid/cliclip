@@ -2,6 +2,9 @@
 
 """
 Find local images based on text prompt.
+
+TODO:
+- Add optional dimensionality reduction.
 """
 
 import os

@@ -27,7 +27,3 @@ options:
   -t TOP, --top TOP     Number of top scored images to display.
   -s, --score           Display score along output.
 ```
-
-## TODO
-
-- Add flag that toggle score statistics so that the default output is clean.
